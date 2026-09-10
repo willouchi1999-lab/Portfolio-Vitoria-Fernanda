@@ -876,3 +876,186 @@ html {
 .menu a:hover::after {
     width: 100%;
 }
+
+/* ==========================================================
+   RESPONSIVO - MOBILE E TABLET (telas até 768px)
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+  .tracos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .traco-item {
+    padding: 0;
+    border-left: none !important;
+  }
+    
+  .foto-perfil-triangulo {
+    width: 147px;
+    top: -59px;
+    left: -73px;
+  }
+
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .linha-cinza {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  section#jornada {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 0 20px;
+  }
+
+  .contato-grid,
+  footer {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 16px 20px;
+  }
+
+  /* ---------- CABEÇALHO ---------- */
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .menu {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+
+  /* ---------- SEÇÃO INÍCIO ---------- */
+  .intro-topo {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .intro-texto {
+    max-width: 100%;
+  }
+
+  .descricao {
+    max-width: 100%;
+  }
+
+  .botao_curriculo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .foto-container {
+    left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-top: -20px;
+  }
+
+  .foto-perfil {
+    width: 220px;
+    margin-right: 0;
+  }
+
+  .foto-perfil-triangulo {
+    width: 130px;
+    top: -40px;
+    left: -30px;
+  }
+
+.foto-perfil-print {
+    width: 117px;
+    top: 29px;
+    left: 227px;
+  }
+
+  .foto-perfil-bolinhas {
+    width: 147px;
+    top: 132px;
+    left: 103px;
+  }
+}
+
+  /* ---------- SOBRE MIM ---------- */
+  .sobre-conteudo {
+    flex-direction: column;
+  }
+
+  .informacoes-rapidas {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+    .informacoes-rapidas {
+    margin-right: 0;
+    margin-top: -15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  /* ---------- HABILIDADES ---------- */
+  .coluna-habilidade:not(:last-child) {
+    border-right: none;
+    border-bottom: 2px solid rgb(223, 221, 243);
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  /* ---------- MINHA JORNADA ---------- */
+  .jornada-colunas {
+    gap: 30px;
+  }
+
+  .jornada-coluna:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .timeline {
+    margin-left: 10px;
+  }
+
+  .timeline-desc {
+    max-width: 100%;
+  }
+
+  .gif-jornada {
+    position: static;
+    width: 100%;
+    max-width: 320px;
+    margin-left: 0;
+  }
+
+  /* ---------- CONTATO ---------- */
+
+ .contato-grid {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contato-esquerda {
+    align-items: center;
+  }
+
+  .botao_contato {
+    align-self: center;
+  }
